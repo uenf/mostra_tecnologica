@@ -1,4 +1,6 @@
 Mostra::Application.routes.draw do
+  devise_for :administradores
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

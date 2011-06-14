@@ -1,0 +1,377 @@
+pt-BR:
+  # paginação com kaminari
+  views:
+    pagination:
+      previous: "&laquo; Anteriores"
+      next: "Próximas &raquo;"
+      truncate: "..."
+
+  errors:
+    template:
+      header:
+        one: "Não foi possível gravar %{model}: 1 erro"
+        other: "Não foi possível gravar %{model}: %{count} erros."
+      body: "Por favor, verifique o(s) seguinte(s) campo(s):"
+    messages:
+      not_found: 'não encontrado'
+      already_confirmed: 'já foi confirmado'
+      not_locked: 'não foi bloqueado'
+      not_saved:
+        one: '1 erro impediu que %{model} fosse gravado:'
+        other: '%{count} erros impediram que %{model} fosse gravado:'
+
+  # formatos de data e hora
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%d de %B"
+      long: "%d de %B de %Y"
+
+    day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
+    abbr_day_names: [Dom, Seg, Ter, Qua, Qui, Sex, Sáb]
+    month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
+    abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
+    order: [day, month, year]
+
+  time:
+    formats:
+      default: "%A, %d de %B de %Y, %H:%M h"
+      short: "%d/%m, %H:%M h"
+      long: "%A, %d de %B de %Y, %H:%M h"
+    am: ''
+    pm: ''
+
+  # distancia do tempo em palavras
+  datetime:
+    distance_in_words:
+      half_a_minute: 'meio minuto'
+      less_than_x_seconds:
+        one: 'menos de 1 segundo'
+        other: 'menos de %{count} segundos'
+
+      x_seconds:
+        one: '1 segundo'
+        other: '%{count} segundos'
+
+      less_than_x_minutes:
+        one: 'menos de um minuto'
+        other: 'menos de %{count} minutos'
+
+      x_minutes:
+        one: '1 minuto'
+        other: '%{count} minutos'
+
+      about_x_hours:
+        one: 'aproximadamente 1 hora'
+        other: 'aproximadamente %{count} horas'
+
+      x_days:
+        one: '1 dia'
+        other: '%{count} dias'
+
+      about_x_months:
+        one: 'aproximadamente 1 mês'
+        other: 'aproximadamente %{count} meses'
+
+      x_months:
+        one: '1 mês'
+        other: '%{count} meses'
+
+      about_x_years:
+        one: 'aproximadamente 1 ano'
+        other: 'aproximadamente %{count} anos'
+
+      over_x_years:
+        one: 'mais de 1 ano'
+        other: 'mais de %{count} anos'
+
+      almost_x_years:
+        one: 'quase 1 ano'
+        other: 'quase %{count} anos'
+
+    prompts:
+      year:   "Ano"
+      month:  "Mês"
+      day:    "Dia"
+      hour:   "Hora"
+      minute: "Minuto"
+      second: "Segundos"
+
+  # numeros
+  number:
+    format:
+      precision: 3
+      separator: ','
+      delimiter: '.'
+    currency:
+      format:
+        unit: 'R$'
+        precision: 2
+        format: '%u %n'
+        separator: ','
+        delimiter: '.'
+    percentage:
+      format:
+        delimiter: '.'
+    precision:
+      format:
+        delimiter: '.'
+    human:
+      format:
+        precision: 2
+        delimiter: '.'
+        significant: true
+        strip_unsignificant_zeros: true
+      # number_to_human_size()
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      # number_to_human()
+      # new in rails 3: please add to other locales
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: "mil"
+          million:
+            one: "milhão"
+            other: "milhões"
+          billion:
+            one: "bilhão"
+            other: "bilhões"
+          trillion:
+            one: "trilhão"
+            other: "trilhões"
+          quadrillion:
+            one: "quatrilhão"
+            other: "quatrilhões"
+
+  # Usado no Array.to_sentence
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " e "
+      last_word_connector: " e "
+
+  # ActiveRecord
+  activerecord:
+    models:
+      administrador: 'Administrador'
+      noticia: "Notícia"
+      pagina: "Página"
+      configuracao: "Configuração"
+      plano: "Plano"
+    attributes:
+      plano:
+        tipo: "Tipo do plano"
+      administrador:
+        email: "E-mail"
+        password: "Senha"
+        password_confirmation: "Repita a senha"
+        current_sign_in_at: "Último login"
+      documento:
+        titulo: "Título"
+        publicado: "Publicar"
+      plano:
+        preco: "Preço"
+      associado:
+        email: "E-mail"
+        instituicao: "Instituição"
+        numero: "Número"
+        password: "Senha"
+        password_confirmation: "Repita a senha"
+        nivel_de_escolaridade: "Nível de escolaridade"
+        area_de_formacao: "Área de formação"
+        data_conclusao_curso: "Mês/Ano de conclusão"
+        instituicao_de_ensino: "Instituição de ensino"
+        funcao: "Função"
+      noticia:
+        titulo: "Título"
+        conteudo: "Conteúdo"
+        data: "Data de publicação"
+        publicado: "Publicar"
+      pagina:
+        titulo: "Título"
+        conteudo: "Conteúdo"
+      evento:
+        descricao: "Descrição"
+      publicidade:
+        titulo: "Título"
+        publicado: "Publicar"
+      personalidade:
+        descricao: "Descrição"
+    errors:
+      messages:
+        inclusion: "não está incluído na lista."
+        exclusion: "não está disponível."
+        invalid: "não é válido."
+        confirmation: "não está de acordo com a confirmação."
+        accepted: "deve ser aceito"
+        empty: "não pode ficar vazio."
+        blank: "não pode ser vazio."
+        too_long: "é muito longo (máximo: %{count} caracteres)."
+        too_short: "é muito curto (mínimo: %{count} caracteres)."
+        wrong_length: "não possui o tamanho esperado (%{count} caracteres)."
+        taken: "já está em uso."
+        not_a_number: "não é um número."
+        not_an_integer: "não é um número inteiro."
+        greater_than: "deve ser maior do que %{count}."
+        greater_than_or_equal_to: "deve ser maior ou igual a %{count}."
+        equal_to: "deve ser igual a %{count}."
+        less_than: "deve ser menor do que %{count}."
+        less_than_or_equal_to: "deve ser menor ou igual a %{count}."
+        odd: "deve ser ímpar."
+        even: "deve ser par."
+        record_invalid: "A validação falhou: %{errors}."
+
+  devise:
+    failure:
+      unauthenticated: 'Para continuar, faça login ou registre-se.'
+      unconfirmed: 'Antes de continuar, confirme a sua conta.'
+      locked: 'A sua conta está bloqueada.'
+      invalid: 'E-mail ou senha inválidos.'
+      invalid_token: 'O token de autenticação não é válido.'
+      timeout: 'A sua sessão expirou, por favor faça login novamente para poder continuar.'
+      inactive: 'A sua conta ainda não foi ativada.'
+    sessions:
+      signed_in: 'Logado com sucesso.'
+      signed_out: 'Até logo.'
+    passwords:
+      send_instructions: 'Dentro de minutos, receberá um email com as instruções de reinicialização da senha.'
+      updated: 'A sua senha foi alterada com sucesso. Agora está conectado.'
+    confirmations:
+      send_instructions: 'Dentro de minutos, receberá um email com as instruções de confirmação da sua conta.'
+      confirmed: 'A sua conta foi confirmada com sucesso. Agora está conectado.'
+    registrations:
+      signed_up: 'Seu cadastro foi efetuado com sucesso. Por favor, confirme seu cadastro clicando no link enviado para o seu e-mail.'
+      updated: 'A sua conta foi atualizada com sucesso.'
+      destroyed: 'Adeus! A sua conta foi cancelada com sucesso. Esperamos vê-lo novamente em breve.'
+    unlocks:
+      send_instructions: 'Dentro de minutos, receberá um email com as instruções como desbloquear a sua conta.'
+      unlocked: 'A sua conta foi desbloqueada com sucesso. Agora está conectado.'
+    mailer:
+      confirmation_instructions:
+        subject: 'Instruções de confirmação'
+      reset_password_instructions:
+        subject: 'Instruções de reinicialização de senha'
+      unlock_instructions:
+        subject: 'Instruções de desbloqueio'
+
+  home:
+    name: "início"
+  admin:
+    dashboard:
+      pagename: "Administração do site"
+      name: "Painel"
+      model_name: "Nome do model"
+      last_used: "Última utilização"
+      records: "Registros"
+      modify: "Modificar"
+      add_new: "Adicionar"
+      show: "Exibir"
+      ago: "atrás"
+    history:
+      name: "Histórico"
+      page_name: "Histórico de %{name}"
+      no_activity: "Sem Evento"
+    credentials:
+      log_out: "Desconectar"
+    list:
+      edit_action: "Alterar"
+      delete_action: "Excluir"
+      add_new: "Adicionar"
+      search: "BUSCAR"
+      select: "Selecione %{name} para alterar"
+      show_all: "Exibir todos"
+      select_action: "Selecionar"
+      delete_selected: "Excluir selecionados"
+    new:
+      basic_info: "INFORMAÇÕES BÁSICAS"
+      required: "Obrigatório"
+      optional: "Opcional"
+      one_char: "caracter."
+      many_chars: "caracteres ou menos."
+      chosen: "Selecionado %{name}"
+      select_choice: "Selecione sua(s) escolha(s) e clique"
+      chose_all: "Escolher todos"
+      clear_all: "Limpar todos"
+      save: "Gravar"
+      save_and_add_another: "Gravar e adicionar outro"
+      save_and_edit: "Gravar e alterar"
+      cancel: "Cancelar"
+    delete:
+      flash_confirmation: "%{name} foi apagado com sucesso"
+      confirmation: "Sim, com certeza."
+    flash:
+      successful: "%{name} foi %{action} com sucesso"
+      error: "%{name} falhou ao ser %{action}"
+      noaction: "Não ocorreram ações."
+    actions:
+      create: "criar"
+      created: "criado(a)"
+      update: "atualizar"
+      updated: "atualizado(a)"
+      delete: "excluir"
+      deleted: "excluído(a)"
+
+  simple_form:
+    "yes": 'Sim'
+    "no": 'Não'
+    required:
+      text: 'obrigatório'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Algums erros foram encontrados:"
+    # Labels and hints examples
+    # labels:
+    #   password: 'Password'
+    #   user:
+    #     new:
+    #       email: 'E-mail para efetuar o sign in.'
+    #     edit:
+    #       email: 'E-mail.'
+    # hints:
+    #   username: 'User name to sign in.'
+    #   password: 'No special characters, please.'
+
+  activemodel:
+    models:
+      contato: "Contato"
+    attributes:
+      contato:
+        email: "E-mail"
+    errors:
+      models:
+        contato:
+          attributes:
+            nome:
+              blank: "não pode ser vazio."
+            email:
+              blank: "não pode ser vazio."
+              invalid: "formato inválido"
+            assunto:
+              blank: "não pode ser vazio."
+            mensagem:
+              blank: "não pode ser vazio."
+
+  flexible_date:
+    configuration:
+      format: "%d/%m/%Y"
+    messages:
+      with_suffix:
+        invalid: "inválida."
+        empty: "não pode ser vazia."
+      without_suffix:
+        invalid: "inválida."
+        empty: "não pode ser vazia."
+
