@@ -164,10 +164,10 @@ pt-BR:
   activerecord:
     models:
       administrador: 'Administrador'
+      empresa: "Empresa"
       noticia: "Notícia"
       pagina: "Página"
       configuracao: "Configuração"
-      plano: "Plano"
     attributes:
       plano:
         tipo: "Tipo do plano"
@@ -179,8 +179,11 @@ pt-BR:
       documento:
         titulo: "Título"
         publicado: "Publicar"
-      plano:
-        preco: "Preço"
+      empresa:
+        email: "E-mail"
+        cep: "CEP"
+        cnpj: "CNPJ"
+        numero: "Número"
       associado:
         email: "E-mail"
         instituicao: "Instituição"

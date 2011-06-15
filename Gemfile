@@ -15,6 +15,7 @@ gem 'simple_form', '~>1.4.0'
 gem 'inherited_resources', '~>1.2.0'
 gem 'brazilian-rails', '~>3.0.0'
 gem 'flexible_date', '~>0.3.0'
+gem 'acts_as_url', :git => 'git://github.com/Reprazent/acts_as_url.git'
 
 group :test, :development do
   gem 'factory_girl_rails', '~>1.0.0'

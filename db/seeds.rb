@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 Administrador.create!(
   :email => 'admin@admin.com',
   :password => '123456',

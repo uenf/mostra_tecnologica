@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/Reprazent/acts_as_url.git
+  revision: db7ae61e6990a56a7879cf1332dc11e35b73f953
+  specs:
+    acts_as_url (0.1.0)
+
+GIT
   remote: git://github.com/sferik/rails_admin.git
   revision: 33b9019e7d7ca19ccee6afffc9215e5e12bf1e08
   specs:
@@ -203,6 +209,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_url!
   brazilian-rails (~> 3.0.0)
   cancan (~> 1.6.0)
   capybara (~> 0.4.0)

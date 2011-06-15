@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class DeviseCreateAdministradores < ActiveRecord::Migration
   def self.up
     create_table(:administradores) do |t|
