@@ -3,9 +3,57 @@
 = form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f|
   = devise_error_messages!
   %p
+    = f.label :nome
+    %br/
+    = f.text_field :nome
+  %p
+    = f.label :cnpj
+    %br/
+    = f.text_field :cnpj
+  %p
+    = f.label :telefone
+    %br/
+    = f.text_field :telefone
+  %p
+    = f.label :nome_para_contato
+    %br/
+    = f.text_field :nome_para_contato
+  %p
     = f.label :email
     %br/
     = f.text_field :email
+  %p
+    = f.label :site
+    %br/
+    = f.text_field :site
+  %p
+    = f.label :cep
+    %br/
+    = f.text_field :cep
+  %p
+    = f.label :cidade
+    %br/
+    = f.text_field :cidade
+  %p
+    = f.label :estado
+    %br/
+    = f.select :estado, Empresa::ESTADOS
+  %p
+    = f.label :bairro
+    %br/
+    = f.text_field :bairro
+  %p
+    = f.label :logradouro
+    %br/
+    = f.text_field :logradouro
+  %p
+    = f.label :numero
+    %br/
+    = f.text_field :numero
+  %p
+    = f.label :complemento
+    %br/
+    = f.password_field :complemento
   %p
     = f.label :password
     %i (leave blank if you don't want to change it)
@@ -25,3 +73,4 @@
 %p
   Unhappy? #{link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete}.
 = link_to "Back", :back
+

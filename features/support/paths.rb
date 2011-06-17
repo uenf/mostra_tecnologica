@@ -12,6 +12,9 @@ module NavigationHelpers
     when /the home\s?page/
       '/'
 
+    when /página de cadastro de empresas/
+      '/empresas/sign_up'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
@@ -32,3 +35,4 @@ module NavigationHelpers
 end
 
 World(NavigationHelpers)
+
