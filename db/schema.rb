@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 40) do
+ActiveRecord::Schema.define(:version => 50) do
 
   create_table "administradores", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
@@ -65,6 +65,13 @@ ActiveRecord::Schema.define(:version => 40) do
 
   add_index "empresas", ["email"], :name => "index_empresas_on_email", :unique => true
   add_index "empresas", ["reset_password_token"], :name => "index_empresas_on_reset_password_token", :unique => true
+
+  create_table "paginas", :force => true do |t|
+    t.string   "titulo"
+    t.text     "conteudo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "rails_admin_histories", :force => true do |t|
     t.string   "message"

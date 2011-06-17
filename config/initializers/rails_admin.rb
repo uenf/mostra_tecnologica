@@ -80,5 +80,21 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.model Pagina do
+    sort_by :titulo
+    sort_reverse false
+
+    list do
+      field :titulo
+    end
+
+    edit do
+      field :titulo
+      field :conteudo, :text do
+        ckeditor true
+      end
+    end
+  end
+
 end
 
