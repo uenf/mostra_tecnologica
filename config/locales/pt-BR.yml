@@ -184,6 +184,7 @@ pt-BR:
         cep: "CEP"
         cnpj: "CNPJ"
         numero: "Número"
+        password: "Senha"
       associado:
         email: "E-mail"
         instituicao: "Instituição"

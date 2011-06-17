@@ -6,7 +6,7 @@ Funcionalidade: Manipular informações da minha empresa
   Para que eu possa mantê-las atualizadas
 
   Esquema do Cenário: Cadastrar minha empresa
-    Dado que eu estou na página de cadastro de empresas
+    Dado que eu estou na página de cadastro da minha empresa
     Quando eu preencho "Nome" com "<Nome>"
     E eu preencho "CNPJ" com "<CNPJ>"
     E eu preencho "CEP" com "<CEP>"
@@ -33,6 +33,7 @@ Funcionalidade: Manipular informações da minha empresa
       | Petrobras |                    | 28015200 | Rio de Janeiro | Campos | Centro | Av. das Américas | 56     | 2222222222 | Fulano            | algum@email.com | www.google.com | 123456 | 123456               | não pode ser vazio.                   | 0 |
       | Petrobras | 11.111.111/1111-11 | 28015200 | Rio de Janeiro | Campos | Centro | Av. das Américas | 56     | 2222222222 | Fulano            | algum@email.com | www.google.com | 123456 | 123456               | número inválido                       | 0 |
       | Petrobras | 113                | 28015200 | Rio de Janeiro | Campos | Centro | Av. das Américas | 56     | 2222222222 | Fulano            | algum@email.com | www.google.com | 123456 | 123456               | número inválido                       | 0 |
+# Dúvida: Endereço vai ser obrigatório?
 #      | Petrobras | 69.103.604/0001-60 |          | Rio de Janeiro | Campos | Centro | Av. das Américas | 56     | 2222222222 | Fulano            | algum@email.com | www.google.com | 123456 | 123456               | não pode ser vazio.                   | 0 |
 #      | Petrobras | 69.103.604/0001-60 | 28015200 |                | Campos | Centro | Av. das Américas | 56     | 2222222222 | Fulano            | algum@email.com | www.google.com | 123456 | 123456               | não pode ser vazio.                   | 0 |
 #      | Petrobras | 69.103.604/0001-60 | 28015200 | Rio de Janeiro |        | Centro | Av. das Américas | 56     | 2222222222 | Fulano            | algum@email.com | www.google.com | 123456 | 123456               | não pode ser vazio.                   | 0 |
@@ -47,4 +48,15 @@ Funcionalidade: Manipular informações da minha empresa
       | Petrobras | 69.103.604/0001-60 | 28015200 | Rio de Janeiro | Campos | Centro | Av. das Américas | 56     | 2222222222 | Fulano            | algum@email.com | www.google.com |        | 123456               | não pode ser vazio.                   | 0 |
       | Petrobras | 69.103.604/0001-60 | 28015200 | Rio de Janeiro | Campos | Centro | Av. das Américas | 56     | 2222222222 | Fulano            | algum@email.com | www.google.com | 123456 | abcdef               | não está de acordo com a confirmação. | 0 |
       | Petrobras | 69.103.604/0001-60 | 28015200 | Rio de Janeiro | Campos | Centro | Av. das Américas | 56     | 2222222222 | Fulano            | algum@email.com | www.google.com | 123456 |                      | não pode ser vazio.                   | 0 |
+
+  Cenário: Editar minhas informações
+    Dado que eu tenho uma empresa com nome "Max é Fruta", e-mail "max12@email.com" e senha "123456"
+    E que eu estou logado
+    E que eu estou na página de edição da minha empresa
+    E eu preencho "Nome" com "Max Frutas"
+    E eu preencho "Senha atual" com "123456"
+    E eu pressiono "Enviar"
+# Observação: Esses passos estão pendentes porque ainda vai ser implementada a view
+#    Então eu devo ver "Max Frutas"
+#    E eu devo ver "A sua conta foi atualizada com sucesso."
 

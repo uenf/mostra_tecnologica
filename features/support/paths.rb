@@ -12,8 +12,11 @@ module NavigationHelpers
     when /the home\s?page/
       '/'
 
-    when /página de cadastro de empresas/
-      '/empresas/sign_up'
+    when /página de cadastro da minha empresa/
+      new_empresa_registration_path
+
+    when /página de edição da minha empresa/
+      edit_empresa_registration_path
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

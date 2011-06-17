@@ -55,20 +55,20 @@
     %br/
     = f.password_field :complemento
   %p
-    = f.label :password
+    = f.label :password, 'Senha'
     %i (leave blank if you don't want to change it)
     %br/
     = f.password_field :password
   %p
-    = f.label :password_confirmation
+    = f.label :password_confirmation, 'Repita a senha'
     %br/
     = f.password_field :password_confirmation
   %p
-    = f.label :current_password
+    = f.label :current_password, 'Senha atual'
     %i (we need your current password to confirm your changes)
     %br/
     = f.password_field :current_password
-  %p= f.submit "Update"
+  %p= f.submit "Enviar"
 %h3 Cancel my account
 %p
   Unhappy? #{link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete}.

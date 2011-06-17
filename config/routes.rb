@@ -4,6 +4,8 @@ Mostra::Application.routes.draw do
 
   devise_for :empresas
 
+  root :to => "empresas#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
