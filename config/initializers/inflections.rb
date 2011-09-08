@@ -5,6 +5,8 @@
 # (all these examples are active by default):
  ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'administrador', 'administradores'
+  inflect.irregular 'inscricao', 'inscricoes'
+  inflect.irregular 'Inscrição', 'Inscrições'
 #   inflect.plural /^(ox)$/i, '\1en'
 #   inflect.singular /^(ox)en/i, '\1'
 #   inflect.irregular 'person', 'people'

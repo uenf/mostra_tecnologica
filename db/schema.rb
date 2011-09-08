@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 60) do
+ActiveRecord::Schema.define(:version => 70) do
 
   create_table "administradores", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
@@ -76,6 +76,15 @@ ActiveRecord::Schema.define(:version => 60) do
     t.time     "inicio_do_expediente"
     t.time     "fim_do_expediente"
     t.text     "observacoes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "inscricoes", :force => true do |t|
+    t.string   "nome"
+    t.string   "email"
+    t.string   "cpf"
+    t.string   "instituicao"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

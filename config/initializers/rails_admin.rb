@@ -122,5 +122,22 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.model Inscricao do
+    sort_by :nome
+    sort_reverse false
+
+    list do
+      field :nome
+      field :email
+      field :instituicao
+    end
+
+    edit do
+      field :nome
+      field :cpf
+      field :email
+      field :instituicao
+    end
+  end
 end
 

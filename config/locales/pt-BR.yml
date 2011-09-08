@@ -165,6 +165,7 @@ pt-BR:
     models:
       administrador: 'Administrador'
       estagio: 'Oferta de estágio'
+      inscricao: 'Inscrição'
       empresa: "Empresa"
       noticia: "Notícia"
       pagina: "Página"
@@ -184,6 +185,10 @@ pt-BR:
         carga_horaria_semanal: 'Carga horária semanal'
         remuneracao: 'Remuneração'
         observacoes: 'Observações'
+      inscricao:
+        instituicao: 'Instituição'
+        cpf: 'CPF'
+        email: 'E-mail'
       documento:
         titulo: "Título"
         publicado: "Publicar"
