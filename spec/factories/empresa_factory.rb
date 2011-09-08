@@ -2,6 +2,7 @@
 
 Factory.define :empresa do |f|
   f.nome "MyString"
+  f.descricao "MyString"
   f.cnpj "69.103.604/0001-60"
   f.sequence(:email) { |n| "empresa_#{n}@email.com" }
   f.telefone "(22) 2222-2222"

@@ -36,6 +36,7 @@ RailsAdmin.config do |config|
   end
 
   config.model Empresa do
+    object_label_method :nome
     sort_by :nome
     sort_reverse false
 
@@ -91,6 +92,31 @@ RailsAdmin.config do |config|
     edit do
       field :titulo
       field :conteudo, :text do
+        ckeditor true
+      end
+    end
+  end
+
+  config.model Estagio do
+    sort_by :funcao
+    sort_reverse false
+
+    list do
+      field :empresa
+      field :funcao
+      field :carga_horaria_semanal
+      field :remuneracao
+    end
+
+    edit do
+      field :empresa_id, :belongs_to_association
+      field :funcao
+      field :area
+      field :carga_horaria_semanal
+      field :remuneracao
+      field :inicio_do_expediente
+      field :fim_do_expediente
+      field :observacoes, :text do
         ckeditor true
       end
     end

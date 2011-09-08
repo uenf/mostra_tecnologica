@@ -1,5 +1,7 @@
 # -*- encoding : utf-8 -*-
 class Empresa < ActiveRecord::Base
+  has_many :estagios
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable, :lockable and :timeoutable
   devise :database_authenticatable, :registerable, :confirmable,
@@ -33,6 +35,5 @@ class Empresa < ActiveRecord::Base
   def password_is_blank?
     self.password.blank?
   end
-
 end
 

@@ -4,6 +4,14 @@ pt-BR:
       not_found: "não encontrado"
       already_confirmed: "já foi confirmado"
       not_locked: "não foi bloqueado"
+      invalid_date: "não é uma data válida"
+      invalid_time: "não é um horário válido"
+      invalid_datetime: "não é uma data/horário válido"
+      is_at: "deve ser entre %{restriction}"
+      before: "deve ser antes de %{restriction}"
+      on_or_before: "deve ser exatamente ou antes de %{restriction}"
+      after: "deve ser depois de %{restriction}"
+      on_or_after: "deve ser exatamente ou depois de %{restriction}"
 
   devise:
     failure:
@@ -37,3 +45,4 @@ pt-BR:
         subject: 'Instruções de reinicialização de senha'
       unlock_instructions:
         subject: 'Instruções de desbloqueio'
+

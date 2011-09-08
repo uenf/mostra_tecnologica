@@ -16,6 +16,7 @@ gem 'inherited_resources', '~>1.2.0'
 gem 'brazilian-rails', '~>3.0.0'
 gem 'flexible_date', '~>0.3.0'
 gem 'acts_as_url', :git => 'git://github.com/Reprazent/acts_as_url.git'
+gem 'validates_timeliness', '~> 3.0.2'
 
 group :test, :development do
   gem 'factory_girl_rails', '~>1.0.0'
@@ -23,6 +24,7 @@ group :test, :development do
   gem 'remarkable_activerecord', '~>4.0.0.alpha4'
   gem 'remarkable_activemodel', '~>4.0.0.alpha4'
   gem 'spork', '~>0.8.0'
+  gem 'valid_attribute', '~>1.1.0'
 end
 
 group :cucumber do

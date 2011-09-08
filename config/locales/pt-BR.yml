@@ -164,6 +164,7 @@ pt-BR:
   activerecord:
     models:
       administrador: 'Administrador'
+      estagio: 'Oferta de estágio'
       empresa: "Empresa"
       noticia: "Notícia"
       pagina: "Página"
@@ -176,6 +177,13 @@ pt-BR:
         password: "Senha"
         password_confirmation: "Repita a senha"
         current_sign_in_at: "Último login"
+      estagio:
+        inicio_do_expediente: 'Início do expediente'
+        area: 'Área'
+        funcao: 'Função'
+        carga_horaria_semanal: 'Carga horária semanal'
+        remuneracao: 'Remuneração'
+        observacoes: 'Observações'
       documento:
         titulo: "Título"
         publicado: "Publicar"
