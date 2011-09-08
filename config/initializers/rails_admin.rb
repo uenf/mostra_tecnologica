@@ -49,6 +49,7 @@ RailsAdmin.config do |config|
 
     edit do
       field :nome
+      field :area_de_atuacao
       field :cnpj
       field :telefone
       field :nome_para_contato

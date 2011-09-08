@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(:version => 70) do
 
   create_table "empresas", :force => true do |t|
     t.string   "nome"
-    t.text     "descricao"
+    t.string   "area_de_atuacao"
     t.string   "cnpj"
     t.string   "telefone"
     t.string   "nome_para_contato"

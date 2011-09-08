@@ -3,7 +3,7 @@ class CreateEmpresas < ActiveRecord::Migration
   def self.up
     create_table :empresas do |t|
       t.string :nome
-      t.text :descricao
+      t.string :area_de_atuacao
       t.string :cnpj
       t.string :telefone
       t.string :nome_para_contato

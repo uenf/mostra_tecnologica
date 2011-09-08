@@ -198,6 +198,7 @@ pt-BR:
         cnpj: "CNPJ"
         numero: "Número"
         password: "Senha"
+        area_de_atuacao: 'Área de atuação'
       associado:
         email: "E-mail"
         instituicao: "Instituição"
